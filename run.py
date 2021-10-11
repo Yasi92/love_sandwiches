@@ -7,10 +7,7 @@ SCOPE = [
     "https://www.googleapis.com/auth/drive"
     ]
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 45ccb3ae0baf60e056df38da776c1ce358ff34f9
 CREDS = Credentials.from_service_account_file('creds.json')
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
@@ -21,11 +18,6 @@ sales = SHEET.worksheet('sales')
 data = sales.get_all_values()
 
 print(data)
-<<<<<<< HEAD
-print('hello')
 
 
-=======
 
-print("hey")
->>>>>>> 45ccb3ae0baf60e056df38da776c1ce358ff34f9
